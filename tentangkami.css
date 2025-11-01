@@ -1,0 +1,47 @@
+
+.about-jumbo {
+  background: url('../asset/dior.jpeg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.about-section {
+  padding: 60px 10%;
+  line-height: 1.7;
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--gold);
+}
+
+.mission-vision {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.mission-vision .card {
+  flex: 1;
+  min-width: 280px;
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.mission-vision .card:hover {
+  transform: translateY(-6px);
+}
+
+.team-section {
+  margin-top: 50px;
+  background: var(--light-bg);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}

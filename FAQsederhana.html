@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Sederhana  Masion Navelle</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #50360a;
+    }
+
+    /* Kotak FAQ */
+    .faq {
+      background-color: white;
+      border-radius: 5px;
+      margin: 10px auto;
+      padding: 10px;
+      width: 80%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .pertanyaan {
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #d9ebf7;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .jawaban {
+      display: none; /* disembunyikan dulu */
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #eef6fb;
+      border-left: 3px solid #237dad;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>FAQ - Masion Navelle</h2>
+
+  <!-- FAQ 1 -->
+  <div class="faq">
+    <div class="pertanyaan" onclick="tampilJawaban(1)">
+      1. Apakah semua produk bergaransi?
+    </div>
+    <div class="jawaban" id="jawaban1">
+      Ya, semua produk kami resmi dari designer ternama.
+    </div>
+  </div>
+
+  <!-- FAQ 2 -->
+  <div class="faq">
+    <div class="pertanyaan" onclick="tampilJawaban(2)">
+      2. Apakah Masion Navella menerima pembelian online?
+    </div>
+    <div class="jawaban" id="jawaban2">
+      Ya, kami menerima pembelian secara online melalui website resmi dan marketplace terpercaya.
+    </div>
+  </div>
+
+  <!-- FAQ 3 -->
+  <div class="faq">
+    <div class="pertanyaan" onclick="tampilJawaban(3)">
+      3. Apakah tersedia layanan perawatan tas?
+    </div>
+    <div class="jawaban" id="jawaban3">
+      Tentu! Kami melayani perawatan tas, seperti cuci tas agar tidak mengelupas dan tetap terjaga.
+    </div>
+  </div>
+
+  <script>
+    // Fungsi sederhana untuk menampilkan jawaban
+    function tampilJawaban(no) {
+      var jawaban = document.getElementById("jawaban" + no);
+      if (jawaban.style.display === "none") {
+        jawaban.style.display = "block";
+      } else {
+        jawaban.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
